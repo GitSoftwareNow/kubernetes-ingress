@@ -6,7 +6,7 @@ os:
 arch:
   - arm64 
   - amd64
-  - mips64el
+  - mips64
 
 addons:
   apt:
