@@ -2,7 +2,7 @@ all: push
 
 VERSION = edge
 TAG = $(VERSION)
-PREFIX = nginx/nginx-ingress
+PREFIX = dockersoft/nginx-ingress
 
 GOLANG_CONTAINER = golang:1.15
 GOFLAGS ?= -mod=vendor

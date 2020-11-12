@@ -1,0 +1,21 @@
+dist: focal
+
+os:
+  - linux
+
+arch:
+  - arm64 
+  - amd64
+  - mips64el
+
+addons:
+  apt:
+    update: true
+  hosts:
+    - node2
+
+language: 
+  - go
+  
+script: 
+  - make -j16
