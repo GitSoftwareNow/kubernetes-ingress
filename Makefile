@@ -16,7 +16,7 @@ DOCKER_BUILD_OPTIONS =
 
 GIT_COMMIT = $(shell git rev-parse --short HEAD)
 
-export DOCKER_BUILDKIT = 1
+#export DOCKER_BUILDKIT = 1
 
 lint:
 	golangci-lint run
