@@ -4,7 +4,7 @@ VERSION = edge
 TAG = $(VERSION)
 PREFIX = dockersoft/nginx-ingress
 
-GOLANG_CONTAINER = golang:1.15
+GOLANG_CONTAINER = golang:1.15.5-buster
 GOFLAGS ?= -mod=vendor
 DOCKERFILEPATH = build
 DOCKERFILE = Dockerfile # note, this can be overwritten e.g. can be DOCKERFILE=DockerFileForPlus
