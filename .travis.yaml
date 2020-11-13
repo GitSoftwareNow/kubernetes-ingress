@@ -4,7 +4,8 @@ language:
   - go
   
 go:
-  - 1.15
+  - 1.13.x
+  - 1.15.x
 docker:
   - 1.19.3
 os:
