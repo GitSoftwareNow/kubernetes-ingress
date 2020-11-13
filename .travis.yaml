@@ -1,11 +1,20 @@
 dist: focal
 
+language: 
+  - go
+  
+go:
+  - 1.15
+docker:
+  - 1.19.3
 os:
   - linux
 
 arch:
   - arm64 
   - amd64
+  
+sudo: true
 
 addons:
   apt:
@@ -15,10 +24,7 @@ addons:
     - node2
     - node3
 
-language: 
-  - go
-
-go:
-  - 1.15
 script: 
+  - sudo apt install golang
+  - sudo apt install docker
   - make -j16
